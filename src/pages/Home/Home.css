@@ -1,0 +1,44 @@
+.home__hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-block-end: 9.375rem;
+}
+
+.home__hero__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__hero__content-container p:nth-of-type(1) {
+  font-family: Roboto-Light;
+  font-size: 4rem;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+.home__hero__content-container p:nth-of-type(2) {
+  font-family: Roboto-Bold;
+  font-size: 4rem;
+  color: #383838;
+}
+
+.home__hero__image-container {
+  min-height: 829px;
+  background: url(/images/building-1.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.home__hero__image-container a {
+  all: unset;
+  background-color: white;
+  cursor: pointer;
+  color: #383838;
+  padding: 1.5rem 2rem;
+  margin-inline-start: -1px;
+  margin-block-end: -1px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
