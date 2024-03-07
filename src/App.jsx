@@ -15,8 +15,6 @@ function App() {
   const [darkMode, setDarkMode] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  console.log(loading)
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(!loading)
