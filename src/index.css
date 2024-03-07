@@ -69,12 +69,48 @@ img {
   transition: 0.5s;
 }
 
+.darkMode--header .link {
+  border-block-start: 1px solid #343434;
+  border-block-end: 1px solid #343434;
+}
+
 .link:hover {
-  border-block-start: 1px solid black;
-  border-block-end: 1px solid black;
+  border-block-start: 1px solid #343434;
+  border-block-end: 1px solid #343434;
+}
+
+.darkMode--header .link:hover {
+  border-block-start: 1px solid white;
+  border-block-end: 1px solid white;
 }
 
 .active {
-  border-block-start: 1px solid black;
-  border-block-end: 1px solid black;
+  border-block-start: 1px solid #343434;
+  border-block-end: 1px solid #343434;
+}
+
+.darkMode--header .active {
+  border-block-start: 1px solid white;
+  border-block-end: 1px solid white;
+}
+
+.darkMode--header {
+  background-color: #343434;
+  color: #ffffff;
+}
+
+.darkModeIcon {
+  cursor: pointer;
+}
+
+.darkMode--header .darkModeIcon--dark {
+  display: none;
+}
+
+.darkModeIcon--light {
+  display: none;
+}
+
+.darkMode--header .darkModeIcon--light {
+  display: inline-block;
 }
