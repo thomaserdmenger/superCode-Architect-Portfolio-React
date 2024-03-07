@@ -127,3 +127,42 @@
   align-self: flex-end;
   margin-block-start: 1rem;
 }
+
+/* ! Contact Section */
+
+.home__contact {
+  margin-block-end: 7.5rem;
+}
+
+.home__contact h2 {
+  margin-block-end: 22px;
+}
+
+.home__contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-block-end: 5rem;
+  gap: 2rem;
+}
+
+.home__contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home__contact input,
+.home__contact textarea {
+  background-color: #efefef;
+  padding: 1rem;
+  border: none;
+}
+
+.home__contact textarea {
+  height: 150px;
+}
+
+.home__contact__image-container {
+  background: url(/images/man.png) no-repeat center;
+  background-size: cover;
+}

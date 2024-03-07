@@ -100,6 +100,43 @@ const Home = () => {
           </div>
           <Link className='link--more link--dark'>All Projects</Link>
         </section>
+        <section className='home__contact'>
+          <h2>Contact us</h2>
+          <div className='home__contact__grid'>
+            <form>
+              <input
+                type='text'
+                name='name'
+                id='name'
+                placeholder='Name'
+              />
+              <input
+                type='tel'
+                name='tel'
+                id='tel'
+                placeholder='Phone Number'
+              />
+              <input
+                type='email'
+                name='email'
+                id='email'
+                placeholder='Email'
+              />
+              <input
+                type='text'
+                name='interest'
+                id='interest'
+                placeholder='Interested In'
+              />
+              <textarea
+                name='message'
+                id='message'
+                placeholder='Message'></textarea>
+            </form>
+            <div className='home__contact__image-container'></div>
+          </div>
+          <Link className='link--more link--dark'>Send Email</Link>
+        </section>
       </main>
     </div>
   )
