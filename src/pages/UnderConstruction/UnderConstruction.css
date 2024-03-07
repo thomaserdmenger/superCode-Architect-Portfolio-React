@@ -6,6 +6,7 @@
   justify-content: center;
   margin-block-start: -1px;
   margin-inline: -6%;
+  min-height: 80vh;
 }
 
 .under-construction--dark {

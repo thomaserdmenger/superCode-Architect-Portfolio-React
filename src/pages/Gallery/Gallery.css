@@ -1,0 +1,35 @@
+.gallery {
+  padding-block-end: 14.5625rem;
+  margin-block-start: -1px;
+  min-height: 80vh;
+}
+
+.gallery__subheading {
+  font-size: 4.125rem;
+  font-family: Roboto-Bold;
+  color: #333333;
+  margin-block-end: 3.75rem;
+}
+
+.gallery__subheading--dark {
+  color: white;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+.gallery__grid div:first-of-type {
+  background-color: #c4c4c4;
+}
+
+.gallery__grid div {
+  width: 100%;
+}
+
+.gallery__grid div img {
+  width: 100%;
+}
