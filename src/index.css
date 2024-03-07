@@ -108,6 +108,11 @@ h2 {
   font-size: 12px;
 }
 
+.link--dark {
+  background-color: #383838;
+  color: white;
+}
+
 .darkMode--header .active {
   border-block-start: 1px solid white;
   border-block-end: 1px solid white;

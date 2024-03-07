@@ -69,6 +69,37 @@ const Home = () => {
             </div>
           </article>
         </section>
+        <section className='home__projects'>
+          <h2>Our Projects</h2>
+          <div className='home__projects__image-container'>
+            <img
+              src='/images/building-5.png'
+              alt='Building'
+            />
+            <img
+              src='/images/building-6.png'
+              alt='Building'
+            />
+          </div>
+          <div className='home__projects__image-container'>
+            <img
+              className='home__projects__image-7'
+              src='/images/building-7.png'
+              alt='Building'
+            />
+            <img
+              className='home__projects__image-8'
+              src='/images/building-8.png'
+              alt='Building'
+            />
+            <img
+              className='home__projects__image-9'
+              src='/images/building-9.png'
+              alt='Building'
+            />
+          </div>
+          <Link className='link--more link--dark'>All Projects</Link>
+        </section>
       </main>
     </div>
   )
