@@ -49,6 +49,26 @@ const Home = () => {
             <Link className='link--more'>Read more</Link>
           </div>
         </section>
+        <section className='home__focus'>
+          <h2>Main Focus/Mission Statement</h2>
+          <article className='home__focus__grid'>
+            <div>
+              <p>1</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                efficitur, lectus et facilisis placerat.
+              </p>
+            </div>
+            <div>
+              <p>2</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                efficitur, lectus et facilisis placerat, magna mauris porttitor
+                tortor, a auctor est felis ut nisl.
+              </p>
+            </div>
+          </article>
+        </section>
       </main>
     </div>
   )

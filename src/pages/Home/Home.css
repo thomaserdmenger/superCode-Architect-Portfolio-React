@@ -57,3 +57,35 @@
   font-family: Roboto-Light;
   line-height: 1.4;
 }
+
+/* ! Focus Section */
+
+.home__focus__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-block-end: 7.5rem;
+  gap: 2rem;
+}
+
+.home__focus h2 {
+  margin-block-end: 2rem;
+}
+
+.home__focus__grid div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.home__focus__grid div p:nth-of-type(1) {
+  font-family: Roboto-Black;
+  font-size: 12.5rem;
+  color: #f2f2f2;
+}
+
+.home__focus__grid div p:nth-of-type(2) {
+  font-size: 1.375rem;
+  line-height: 36px;
+}
