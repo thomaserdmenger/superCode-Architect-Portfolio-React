@@ -56,3 +56,25 @@ html {
 img {
   max-width: 100%;
 }
+
+.link {
+  all: unset;
+  cursor: pointer;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-block-start: 1px solid white;
+  border-block-end: 1px solid white;
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+  transition: 0.5s;
+}
+
+.link:hover {
+  border-block-start: 1px solid black;
+  border-block-end: 1px solid black;
+}
+
+.active {
+  border-block-start: 1px solid black;
+  border-block-end: 1px solid black;
+}

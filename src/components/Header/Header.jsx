@@ -6,19 +6,43 @@ import { Link, NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <div className='wrapper'>
-      <header>
-        <Link to='/'>
+      <header className='header'>
+        <Link
+          className='header__logo'
+          to='/'>
           <Logo />
         </Link>
-        <nav>
-          <NavLink to='/'>Main</NavLink>
-          <NavLink to='/gallery'>Gallery</NavLink>
-          <NavLink to='/projects'>Projects</NavLink>
-          <NavLink to='/certifications'>Certifications</NavLink>
-          <NavLink to='/contacts'>Contacts</NavLink>
-        </nav>
-        <div>
-          <Dark />
+        <div className='header__right-container'>
+          <nav>
+            <NavLink
+              className='link'
+              to='/'>
+              Main
+            </NavLink>
+            <NavLink
+              className='link'
+              to='/gallery'>
+              Gallery
+            </NavLink>
+            <NavLink
+              className='link'
+              to='/projects'>
+              Projects
+            </NavLink>
+            <NavLink
+              className='link'
+              to='/certifications'>
+              Certifications
+            </NavLink>
+            <NavLink
+              className='link'
+              to='/contacts'>
+              Contacts
+            </NavLink>
+          </nav>
+          <div>
+            <Dark />
+          </div>
         </div>
       </header>
     </div>
