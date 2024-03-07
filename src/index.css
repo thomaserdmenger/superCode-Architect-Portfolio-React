@@ -53,6 +53,13 @@ html {
   padding-inline: 5%;
 }
 
+.wrapper--dark {
+  background-color: #343434;
+  color: white;
+  padding-inline: 5%;
+  border: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -111,6 +118,11 @@ h2 {
 .link--dark {
   background-color: #383838;
   color: white;
+}
+
+.link--light {
+  background-color: white;
+  color: #383838;
 }
 
 .darkMode--header .active {

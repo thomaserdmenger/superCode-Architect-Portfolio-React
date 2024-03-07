@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-block-end: 9.375rem;
+  margin-block-start: -1px;
 }
 
 .home__hero__content-container {
@@ -12,10 +13,16 @@
   justify-content: center;
 }
 
-.home__hero__content-container p {
+.home__hero__lorem {
   font-family: Roboto-Bold;
   font-size: 4rem;
   color: #383838;
+}
+
+.home__hero__lorem--dark {
+  color: white;
+  font-family: Roboto-Bold;
+  font-size: 4rem;
 }
 
 .home__hero__image-container {
@@ -123,7 +130,7 @@
   height: 100%;
 }
 
-.home__projects .link--dark {
+.home__projects .link--more {
   align-self: flex-end;
   margin-block-start: 1rem;
 }
@@ -131,7 +138,7 @@
 /* ! Contact Section */
 
 .home__contact {
-  margin-block-end: 7.5rem;
+  padding-block-end: 7.5rem;
 }
 
 .home__contact h2 {

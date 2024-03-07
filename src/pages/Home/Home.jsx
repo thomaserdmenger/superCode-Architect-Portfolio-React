@@ -1,14 +1,23 @@
-import { Link } from 'react-router-dom'
 import './Home.css'
+import { Link } from 'react-router-dom'
+import { darkModeContext } from '../../context/Context'
+import { useContext } from 'react'
 
 const Home = () => {
+  const { darkMode } = useContext(darkModeContext)
+
   return (
-    <div className='wrapper'>
+    <div className={darkMode ? 'wrapper--dark' : 'wrapper'}>
       <main className='home'>
         <section className='home__hero'>
           <div className='home__hero__content-container'>
             <h2>Project</h2>
-            <p>Lorum</p>
+            <p
+              className={
+                darkMode ? 'home__hero__lorem--dark' : 'home__hero__lorem'
+              }>
+              Lorum
+            </p>
           </div>
           <div className='home__hero__image-container'>
             <Link
@@ -98,7 +107,9 @@ const Home = () => {
               alt='Building'
             />
           </div>
-          <Link className='link--more link--dark'>All Projects</Link>
+          <Link className={darkMode ? 'link--more' : 'link--more link--dark'}>
+            All Projects
+          </Link>
         </section>
         <section className='home__contact'>
           <h2>Contact us</h2>
