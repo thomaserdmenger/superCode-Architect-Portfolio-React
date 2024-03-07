@@ -6,6 +6,7 @@ import Gallery from './pages/Gallery/Gallery'
 import Projects from './pages/Projects/Projects'
 import Certifications from './pages/Certifications/Certifications'
 import Contacts from './pages/Contacts/Contacts'
+import Footer from './pages/Footer/Footer'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           element={<Contacts />}
         />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
