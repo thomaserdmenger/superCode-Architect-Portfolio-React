@@ -7,35 +7,41 @@ import Projects from './pages/Projects/Projects'
 import Certifications from './pages/Certifications/Certifications'
 import Contacts from './pages/Contacts/Contacts'
 import Footer from './pages/Footer/Footer'
+import { darkModeContext } from './context/Context'
+import { useState } from 'react'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false)
+
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route
-          path='/'
-          element={<Home />}
-        />
-        <Route
-          path='/gallery'
-          element={<Gallery />}
-        />
-        <Route
-          path='/projects'
-          element={<Projects />}
-        />
-        <Route
-          path='/certifications'
-          element={<Certifications />}
-        />
-        <Route
-          path='/contacts'
-          element={<Contacts />}
-        />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <darkModeContext.Provider value={{ setDarkMode, darkMode }}>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route
+            path='/'
+            element={<Home />}
+          />
+          <Route
+            path='/gallery'
+            element={<Gallery />}
+          />
+          <Route
+            path='/projects'
+            element={<Projects />}
+          />
+          <Route
+            path='/certifications'
+            element={<Certifications />}
+          />
+          <Route
+            path='/contacts'
+            element={<Contacts />}
+          />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </darkModeContext.Provider>
   )
 }
 
