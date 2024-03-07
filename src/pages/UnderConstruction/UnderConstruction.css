@@ -1,0 +1,21 @@
+.under-construction {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: -1px;
+  margin-inline: -6%;
+}
+
+.under-construction--dark {
+  background-color: #343434;
+}
+
+.under-construction h2 {
+  margin-block-end: 2rem;
+}
+
+.under-construction__image {
+  width: 350px;
+}

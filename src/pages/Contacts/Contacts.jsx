@@ -1,11 +1,10 @@
 import './Contacts.css'
+import UnderConstruction from '../UnderConstruction/UnderConstruction'
 
 const Contacts = () => {
   return (
     <div className='wrapper'>
-      <main>
-        <h1>Contacts Page</h1>
-      </main>
+      <UnderConstruction />
     </div>
   )
 }

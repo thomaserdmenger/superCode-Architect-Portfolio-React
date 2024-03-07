@@ -1,11 +1,10 @@
 import './Certifications.css'
+import UnderConstruction from '../UnderConstruction/UnderConstruction'
 
 const Certifications = () => {
   return (
     <div className='wrapper'>
-      <main>
-        <h1>Certifications Page</h1>
-      </main>
+      <UnderConstruction />
     </div>
   )
 }
