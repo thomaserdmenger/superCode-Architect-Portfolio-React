@@ -49,6 +49,10 @@ html {
   font-family: Roboto-Regular;
 }
 
+.wrapper {
+  padding-inline: 5%;
+}
+
 img {
   max-width: 100%;
 }
