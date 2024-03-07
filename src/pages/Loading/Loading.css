@@ -1,0 +1,21 @@
+@keyframes loadingAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading img {
+  animation: loadingAnimation 1s infinite linear;
+  margin-block-end: 5rem;
+}

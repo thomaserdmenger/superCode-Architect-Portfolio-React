@@ -8,40 +8,56 @@ import Certifications from './pages/Certifications/Certifications'
 import Contacts from './pages/Contacts/Contacts'
 import Footer from './pages/Footer/Footer'
 import { darkModeContext } from './context/Context'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import Loading from './pages/Loading/Loading'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  console.log(loading)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(!loading)
+    }, 1000)
+  }, [])
 
   return (
-    <darkModeContext.Provider value={{ setDarkMode, darkMode }}>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route
-            path='/'
-            element={<Home />}
-          />
-          <Route
-            path='/gallery'
-            element={<Gallery />}
-          />
-          <Route
-            path='/projects'
-            element={<Projects />}
-          />
-          <Route
-            path='/certifications'
-            element={<Certifications />}
-          />
-          <Route
-            path='/contacts'
-            element={<Contacts />}
-          />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </darkModeContext.Provider>
+    <>
+      <darkModeContext.Provider value={{ setDarkMode, darkMode }}>
+        {loading ? (
+          <BrowserRouter>
+            <Header />
+            <Routes>
+              <Route
+                path='/'
+                element={<Home />}
+              />
+              <Route
+                path='/gallery'
+                element={<Gallery />}
+              />
+              <Route
+                path='/projects'
+                element={<Projects />}
+              />
+              <Route
+                path='/certifications'
+                element={<Certifications />}
+              />
+              <Route
+                path='/contacts'
+                element={<Contacts />}
+              />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        ) : (
+          <Loading />
+        )}
+      </darkModeContext.Provider>
+    </>
   )
 }
 
