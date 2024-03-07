@@ -99,7 +99,7 @@ img {
   color: #ffffff;
 }
 
-.darkModeIcon {
+.darkModeIcon--dark {
   cursor: pointer;
 }
 
@@ -109,6 +109,7 @@ img {
 
 .darkModeIcon--light {
   display: none;
+  cursor: pointer;
 }
 
 .darkMode--header .darkModeIcon--light {
