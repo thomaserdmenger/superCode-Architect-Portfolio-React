@@ -51,6 +51,8 @@ html {
 
 .wrapper {
   padding-inline: 5%;
+  max-width: 2000px;
+  margin-inline: auto;
 }
 
 .wrapper--dark {
@@ -58,6 +60,8 @@ html {
   color: white;
   padding-inline: 5%;
   border: none;
+  max-width: 2000px;
+  margin-inline: auto;
 }
 
 img {
@@ -155,5 +159,11 @@ h2 {
 @media only screen and (max-width: 1000px) {
   h2 {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 2.5rem;
   }
 }

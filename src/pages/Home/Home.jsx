@@ -146,7 +146,9 @@ const Home = () => {
             </form>
             <div className='home__contact__image-container'></div>
           </div>
-          <Link className='link--more link--dark'>Send Email</Link>
+          <Link className={darkMode ? 'link--more' : 'link--more link--dark'}>
+            Send Email
+          </Link>
         </section>
       </main>
     </div>

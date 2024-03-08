@@ -20,3 +20,27 @@
   display: flex;
   gap: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__right-container {
+    gap: 0;
+  }
+
+  .header nav {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header a {
+    font-size: 10px;
+  }
+}

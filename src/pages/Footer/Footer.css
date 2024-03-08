@@ -77,3 +77,9 @@
     padding-inline: 10%;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
