@@ -45,7 +45,7 @@ const Home = () => {
               alt='Building'
             />
           </div>
-          <div>
+          <div className='home__about__content-container'>
             <h2>About</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

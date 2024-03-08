@@ -5,6 +5,7 @@
   grid-template-columns: 1fr 2fr;
   margin-block-end: 9.375rem;
   margin-block-start: -1px;
+  gap: 1rem;
 }
 
 .home__hero__content-container {
@@ -33,6 +34,23 @@
   align-items: flex-end;
 }
 
+@media only screen and (max-width: 1000px) {
+  .home__hero {
+    grid-template-columns: 1fr;
+    margin-block-end: 5rem;
+  }
+
+  .home__hero__lorem {
+    margin-block-end: 1rem;
+    text-align: center;
+  }
+
+  .home__hero__lorem--dark {
+    margin-block-end: 1rem;
+    text-align: center;
+  }
+}
+
 /* ! About Section */
 
 .home__about {
@@ -40,6 +58,7 @@
   grid-template-columns: 2fr 1fr;
   margin-block-end: 7.5rem;
   width: 80%;
+  gap: 2rem;
   margin-inline: auto;
 }
 
@@ -63,6 +82,33 @@
   margin-block-end: 2rem;
   font-family: Roboto-Light;
   line-height: 1.4;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home__about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 100%;
+    justify-items: center;
+    margin-block-end: 5rem;
+  }
+
+  .home__about div:first-of-type {
+    grid-row: 2 / span 1;
+  }
+
+  .home__about p {
+    text-align: center;
+  }
+
+  .home__about__content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__about__content-container .link--more {
+    align-self: center;
+  }
 }
 
 /* ! Focus Section */
@@ -95,6 +141,13 @@
 .home__focus__grid div p:nth-of-type(2) {
   font-size: 1.375rem;
   line-height: 36px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home__focus__grid {
+    grid-template-columns: 1fr;
+    margin-block-end: 5rem;
+  }
 }
 
 /* ! Projects Section */
@@ -135,6 +188,32 @@
   margin-block-start: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .home__projects {
+    margin-block-end: 5rem;
+  }
+
+  .home__projects h2 {
+    margin-block-end: 2rem;
+  }
+
+  .home__projects__image-container:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__projects__image-container:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__projects__image-container img {
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 /* ! Contact Section */
 
 .home__contact {
@@ -172,4 +251,14 @@
 .home__contact__image-container {
   background: url(/images/man.png) no-repeat center;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home__contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home__contact__image-container {
+    display: none;
+  }
 }
